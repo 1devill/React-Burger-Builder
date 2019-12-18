@@ -1,0 +1,74 @@
+.Button {
+  display: inline-flex;
+  padding: 10px 20px;
+  width: 25%;
+  border: 1px solid #FFA200;
+  margin: 5px 10px;
+  color: #FFA200;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.Button a {
+  color: #FFA200;
+  text-decoration: none;
+  letter-spacing: 1px;
+  position: relative;
+  transition: all .45s ease-Out;
+}
+
+.Button .Translate {
+  transform: rotate(50deg);
+  width: 100%;
+  height: 250%;
+  left: -200px;
+  top: -30px;
+  background: #FFA200;
+  position: absolute;
+  transition: all .3s ease-Out;
+}
+
+.Button:hover, .Button:active {
+  border-color: #000;
+}
+
+.Button:focus {
+  outline: 3px solid #FFA200;
+}
+
+.Button:hover .Translate, .Button:active .Translate {
+  left: 0;
+}
+
+.Button:hover a, .Button:active a {
+  color: #000;
+}
+
+.Button:disabled {
+  background-color: #AC9980;
+  border: 1px solid #7E7365;
+  cursor: default;
+  color: #ccc;
+}
+
+.Button:hover:disabled, .Button:active:disabled {
+  background-color: #AC9980;
+  border: 1px solid #7E7365;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.Button:disabled .Translate, .Button:active:disabled .Translate {
+  display: none;
+}
+
+.Button:hover:disabled a, .Button:active:disabled a {
+  cursor: not-allowed;
+  color: #FFA200;
+}
