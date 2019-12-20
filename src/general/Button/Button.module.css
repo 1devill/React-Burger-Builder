@@ -1,10 +1,11 @@
+/* Basic Button */
 .Button {
   display: inline-flex;
   padding: 10px 20px;
   width: 25%;
-  border: 1px solid #FFA200;
+  border: 1px solid rgb(15, 0, 68);
   margin: 5px 10px;
-  color: #FFA200;
+  color: rgb(15, 0, 68);
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 1.5px;
@@ -13,10 +14,11 @@
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  border-radius: 3px;
 }
 
 .Button a {
-  color: #FFA200;
+  color: rgb(15, 0, 68);
   text-decoration: none;
   letter-spacing: 1px;
   position: relative;
@@ -29,17 +31,18 @@
   height: 250%;
   left: -200px;
   top: -30px;
-  background: #FFA200;
+  background: rgb(15, 0, 68);
   position: absolute;
   transition: all .3s ease-Out;
 }
 
 .Button:hover, .Button:active {
-  border-color: #000;
+  border-color: rgb(15, 0, 68);
 }
 
 .Button:focus {
-  outline: 3px solid #FFA200;
+  border: 3px solid rgb(15, 0, 68);
+  outline: none;
 }
 
 .Button:hover .Translate, .Button:active .Translate {
@@ -47,7 +50,7 @@
 }
 
 .Button:hover a, .Button:active a {
-  color: #000;
+  color: rgb(255, 241, 49);
 }
 
 .Button:disabled {
@@ -70,5 +73,72 @@
 
 .Button:hover:disabled a, .Button:active:disabled a {
   cursor: not-allowed;
-  color: #FFA200;
+  color: rgb(15, 0, 68);
+}
+
+
+/* Order Button */
+.Button.Order {
+  background-color: rgb(0, 255, 34);
+  color: rgb(15, 0, 68);
+  margin-top: 20px;
+}
+
+.Button.Order a {
+  color: rgb(15, 0, 68);
+  font-weight: bold;
+}
+
+.Button.Order:hover, .Button.Order:active {
+  border-color: rgb(15, 0, 68);
+}
+
+.Button.Order .Translate {
+  background-color: rgb(15, 0, 68);
+}
+
+.Button.Order:hover a, .Button.Order:active a {
+  color: rgb(0, 255, 34);
+}
+
+.Button.Order:enabled {
+  animation-duration: 2.7s;
+  animation-name: enable;
+}
+
+.Button.Order:disabled {
+  background-color: #AC9980;
+  border: 1px solid #7E7365;
+  cursor: default;
+  color: #ccc;
+}
+
+.Button.Order:hover:disabled, .Button.Order:active:disabled {
+  background-color: #AC9980;
+  border: 1px solid #7E7365;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.Button.Order:disabled .Translate, .Button.Order:active:disabled .Translate {
+  display: none;
+}
+
+.Button.Order:hover:disabled a, .Button.Order:active:disabled a {
+  cursor: not-allowed;
+  color: rgb(15, 0, 68);
+}
+
+@keyframes enable {
+  0% {
+    transform: scale(1);
+  }
+
+  60% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

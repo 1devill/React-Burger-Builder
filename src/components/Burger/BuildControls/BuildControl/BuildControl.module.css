@@ -14,4 +14,48 @@
 
 .BuildControl .Label {
     flex: 0 0 20%;
+    font-weight: 700;
+}
+
+@media (min-width: 320px) {
+    .BuildControl .Label {
+
+    }
+}
+
+@media (min-width: 480px) {
+    .BuildControl .Label {   
+        border-left: 3px solid rgb(15, 0, 68);
+        padding: 0 5px;
+    }
+}
+
+@media (min-width: 640px) {
+    .BuildControl .Label {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .BuildControl .Label {
+        
+    }
+}
+
+@media (min-width: 960px) {
+    .BuildControl .Label {
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .BuildControl .Label {
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .BuildControl .Label {
+        
+    }
 }
