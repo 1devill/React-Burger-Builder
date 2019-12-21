@@ -2,7 +2,7 @@ import React from "react";
 
 import classes from "./BuildControls.module.css";
 import BuildControl from "./BuildControl/BuildControl";
-import Button from '../../../general/Button/Button';
+import Button from '../../UI/Button/Button';
 
 const controls = [
   { label: "Salad", type: "salad" },
@@ -24,7 +24,7 @@ const buildControls = props => {
           disabled={props.disabledInfo[ctrl.type]}
         />
       ))}
-      <Button ordered={props.ordered} disabled={!props.purchasable} btnType='order' btnText='ORDER' />
+      <Button clicked={props.ordered} disabled={!props.purchasable} btnType='order' btnText='ORDER' />
     </div>
   );
 };

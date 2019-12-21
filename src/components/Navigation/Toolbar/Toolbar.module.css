@@ -1,0 +1,41 @@
+.Toolbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 241, 49);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 90;
+    height: 55px;
+}
+
+.Toolbar nav {
+    height: 100%;
+}
+
+.DesktopOnly {
+    display: none;
+}
+
+@media (min-width: 320px) {}
+
+@media (min-width: 480px) {
+
+}
+
+@media (min-width: 640px) {
+    .DesktopOnly {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 960px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1440px) {}

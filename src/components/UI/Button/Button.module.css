@@ -129,6 +129,58 @@
   color: rgb(15, 0, 68);
 }
 
+/* Cancel Button */
+.Button.Cancel {
+  background-color: rgb(255, 38, 0);
+  color: rgb(15, 0, 68);
+  margin-top: 20px;
+}
+
+.Button.Cancel a {
+  color: rgb(15, 0, 68);
+  font-weight: bold;
+}
+
+.Button.Cancel:hover, .Button.Cancel:active {
+  border-color: rgb(15, 0, 68);
+}
+
+.Button.Cancel .Translate {
+  background-color: rgb(15, 0, 68);
+}
+
+.Button.Cancel:hover a, .Button.Cancel:active a {
+  color: rgb(255, 38, 0);
+}
+
+.Button.Cancel:enabled {
+  animation-duration: 2.7s;
+  animation-name: enable;
+}
+
+.Button.Cancel:disabled {
+  background-color: #AC9980;
+  border: 1px solid #7E7365;
+  cursor: default;
+  color: #ccc;
+}
+
+.Button.Cancel:hover:disabled, .Button.Cancel:active:disabled {
+  background-color: #AC9980;
+  border: 1px solid #7E7365;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.Button.Cancel:disabled .Translate, .Button.Cancel:active:disabled .Translate {
+  display: none;
+}
+
+.Button.Cancel:hover:disabled a, .Button.Cancel:active:disabled a {
+  cursor: not-allowed;
+  color: rgb(15, 0, 68);
+}
+
 @keyframes enable {
   0% {
     transform: scale(1);
