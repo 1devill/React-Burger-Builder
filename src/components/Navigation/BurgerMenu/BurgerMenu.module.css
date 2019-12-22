@@ -43,14 +43,14 @@
     transform: translateY(5px);
 }
 
-.BurgerMenu.active span:before {
+.BurgerMenu.active span:before, .BurgerMenu:hover span:before {
     transform: rotate(-35deg);
     width: 10px;
     transform-origin: left bottom;
     border-radius: 20% 50% 50% 20%;
 }
 
-.BurgerMenu.active span:after {
+.BurgerMenu.active span:after, .BurgerMenu:hover span:after {
     transform: rotate(35deg);
     width: 10px;
     transform-origin: left top;

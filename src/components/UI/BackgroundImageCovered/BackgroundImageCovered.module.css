@@ -21,7 +21,7 @@
 }
 
 .BackgroundImageCovered div {
-    background-color: rgba(255, 145, 0, 0.7);
+    background-color: rgba(255, 145, 0, 0.4);
     height: 100%;
     z-index: -20;
 }

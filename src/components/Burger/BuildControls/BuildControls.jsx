@@ -27,7 +27,9 @@ const buildControls = props => {
           disabled={props.disabledInfo[ctrl.type]}
         />
       ))}
-      <Button clicked={props.ordered} disabled={!props.purchasable} btnType='order' btnText='ORDER' />
+      <div style={{width: "100%", textAlign: "center"}}>
+        <Button clicked={props.ordered} disabled={!props.purchasable} btnType='order' btnText='ORDER' />
+      </div>
     </div>
   );
 };

@@ -2,11 +2,12 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    height: 40vh;
+    height: 50%;
     text-align: center;
     font-weight: bold;
     font-size: 1.2rem;
     overflow: auto;
+    padding: 90px 0 0;
 }
 
 @media (min-width: 320px) {
