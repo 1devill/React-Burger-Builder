@@ -3,6 +3,8 @@ import React from "react";
 import classes from "./BuildControls.module.css";
 import BuildControl from "./BuildControl/BuildControl";
 import Button from '../../UI/Button/Button';
+import BackgroundImageCovered from '../../UI/BackgroundImageCovered/BackgroundImageCovered';
+import burgerImage from '../../../assets/images/burger-image1.jpg';
 
 const controls = [
   { label: "Salad", type: "salad" },
@@ -14,6 +16,7 @@ const controls = [
 const buildControls = props => {
   return (
     <div className={classes.BuildControls}>
+      <BackgroundImageCovered images={burgerImage} />
       <p>Current price is: <strong>{props.price.toFixed(2)}$</strong></p>
       {controls.map(ctrl => (
         <BuildControl
