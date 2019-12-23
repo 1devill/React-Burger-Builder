@@ -3,6 +3,7 @@
     width: 35px;
     height: 100%;
     border-radius: 50%;
+    transition: transform 0.44s;
 }
 
 .BurgerMenu div {
@@ -55,6 +56,10 @@
     width: 10px;
     transform-origin: left top;
     border-radius: 20% 50% 50% 20%;
+}
+
+.BurgerMenu:hover {
+    transform: rotate(-360deg);
 }
 
 @media (min-width: 320px) {}

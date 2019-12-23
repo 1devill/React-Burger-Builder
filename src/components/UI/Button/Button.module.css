@@ -82,6 +82,7 @@
 .Button.Order {
   background-color: rgb(0, 255, 34);
   color: rgb(15, 0, 68);
+  border-color: transparent;
 }
 
 .Button.Order a {
@@ -89,7 +90,7 @@
 }
 
 .Button.Order:hover, .Button.Order:active {
-  border-color: rgb(15, 0, 68);
+  border-color: transparent;
 }
 
 .Button.Order .Translate {
@@ -133,6 +134,7 @@
   background-color: rgb(255, 38, 0);
   color: rgb(15, 0, 68);
   margin-top: 20px;
+  border-color: transparent;
 }
 
 .Button.Cancel a {
@@ -140,7 +142,7 @@
 }
 
 .Button.Cancel:hover, .Button.Cancel:active {
-  border-color: rgb(15, 0, 68);
+  border-color: transparent;
 }
 
 .Button.Cancel .Translate {
