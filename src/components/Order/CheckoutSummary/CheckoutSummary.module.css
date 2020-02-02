@@ -1,0 +1,7 @@
+.CheckoutSummary {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    height: calc(100vh - 100px);
+    padding-top: 50px;
+}
