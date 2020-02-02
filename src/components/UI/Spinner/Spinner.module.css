@@ -1,7 +1,7 @@
 .Loader {
   font-size: 10px;
   top: calc(50% - 25px);
-  left: calc(50% - 25px);
+  /* left: calc(50% - 25px); */
   display: inline-block;
   text-indent: -9999em;
   width: 5em;
